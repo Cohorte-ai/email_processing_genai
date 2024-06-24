@@ -64,7 +64,7 @@ Go to [Zapier.com](https://www.zapier.com) and log in with your account credenti
 ### Step 2: Set Up AI Actions
 Visit [Zapier AI Actions Demo](https://actions.zapier.com/demo/) to begin the setup process.
 
-### Step 3: Follow the Steps in the Images (1-10)
+### Step 3: Follow the Below Steps to Integrate your Gmail
 
 1. **Open the Action Setup Window** 
    - Click on the "Open action setup window" button.
