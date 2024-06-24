@@ -3,6 +3,7 @@ import requests
 import json
 from llama_index.core import VectorStoreIndex, SimpleDirectoryReader
 from PIL import Image
+import os
 
 # Load environment variables
 import dotenv
@@ -29,7 +30,7 @@ def get_emails(search_prompt):
         "preview_only": False
     }
     headers = {
-        "X-API-Key": "sk-ak-BmfKoMdhReB7wp430okrdcL0nu",
+        "X-API-Key": os.getenv('ZAPIER_NLA_API_KEY'),
         "Content-Type": "application/json"
     }
 
@@ -47,7 +48,7 @@ def draft_email_reply(thread, body, to):
         "preview_only": False
     }
     headers = {
-        "X-API-Key": "sk-ak-BmfKoMdhReB7wp430okrdcL0nu",
+        "X-API-Key": os.getenv('ZAPIER_NLA_API_KEY'),
         "Content-Type": "application/json"
     }
     response = requests.request("POST", url, json=payload, headers=headers)
